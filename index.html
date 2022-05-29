@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Texto</title>    
+</head>
+<body id="content">
+    <header>
+        <img  class="logo"  src="logo.png" alt="logo da Alura com a letra inicial ">
+    </header>
+
+    <main class="main">             
+
+        <section>            
+                <textarea id="entrada-texto" class="input-texto" cols="40" rows="6"  placeholder="Digite seu texto AQUI e clique no botão Criptografar"></textarea>
+                    <div class="aviso-minuscula" >
+                        <img  src="aviso-minusculas.png" alt="apenas letras minúsculas">   
+                                
+                        <div class="botoes">                    
+                            <button class="criptografar" onclick="btnEncriptar()">Criptografar</button>
+                            <button class="descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+                        </div>  
+                    </div>          
+        </section>
+
+        <section> 
+                               
+                <textarea class="mensagem" cols="18" rows="8" readonly="readonly"> </textarea>
+                    
+                    <div id="aviso-mensagem">                        
+                        <img  id="foto-msg" src="mensagem.png" alt="">
+                    </div>  
+
+                    <div id="copiado">
+                        <img src="copiar.png" alt="">                        
+                    </div>
+
+                    <div id="naoCopiado">
+                        <img src="naoCopiado.png" alt="">
+                    </div> 
+                                       
+                    <div class="copiar">
+                            <button class="btn-copiar" onclick="btnCopiar()">Copiar</button>
+                    </div>                     
+            </section>               
+    </main>
+    <footer>
+        <div class="rodape">
+                <nav>
+                    <ul>
+                        <li><a target="_blank" href="https://github.com/maikeliani">GitHub</a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/maikel-iani/">linkedIn</a></li>
+                        <li><a target="_blank" href="https://wa.me/16997225955">WhatsApp</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </footer>
+           
+    <script src="script.js"></script>    
+</body>
+</html>
